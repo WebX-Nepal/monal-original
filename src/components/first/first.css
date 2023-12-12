@@ -1,0 +1,228 @@
+.first-container {
+  background-color: transparent;
+  height: 85vh;
+  padding: 0 6rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.mxWidthContainer {
+  max-width: 1450px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-container {
+  width: 50%;
+}
+
+.left-container .tops {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid #9d873097;
+  width: 10rem;
+  border-radius: 3rem;
+  padding: 0.5rem 0rem;
+}
+
+.left-container .tops i {
+  display: flex;
+  align-items: center;
+  color: #9d8730;
+  font-size: 1rem;
+}
+
+.left-container .tops p {
+  color: white;
+  font-size: .7rem;
+  font-weight: 600;
+}
+
+.left-container .descriptions {
+  /* margin: 2rem 0rem 0 2rem; */
+  padding-bottom: 2rem;
+}
+
+.left-container .descriptions h1 {
+  color: rgb(168, 168, 168);
+  font-size: 2.8rem;
+}
+
+.left-container .descriptions span {
+  color: #9d8730;
+}
+.left-container .descriptions p {
+  color: white;
+  margin: 1rem 3rem 0 0;
+  opacity: 0.7;
+  letter-spacing: 0.6px;
+  text-align: left;
+}
+.left-container .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 2.3rem 2rem; */
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.left-container .buttons .button1 {
+  padding: 0.7rem 2rem;
+  text-align: center;
+  width: 10rem;
+  background-color: #9d8730;
+  font-weight: 600;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.left-container .buttons .button2 {
+  color: black;
+  padding: 0.7rem 2rem;
+  text-align: center;
+  cursor: pointer;
+
+  width: 10rem;
+  align-items: center;
+  background-color: white;
+  font-weight: 600;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+}
+
+.buttons .button1:hover{
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+
+}
+
+.buttons .button2:hover{
+  border: 2px solid #9d8730;
+  background: transparent;
+  color: #9d8730;
+}
+
+.left-container .last-container {
+  /* margin: 2rem; */
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  gap: 4rem;
+}
+.left-container .last-container .single {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2rem;
+}
+.left-container .last-container .single p {
+  color: white;
+  font-size: 1.3rem;
+}
+.left-container .last-container .single span {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.right-container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: start;
+}
+.right-container img {
+  width: 80%;
+}
+
+@media (min-width: 1550px) {
+  .first-container {
+    padding: 0 10rem;
+  }
+}
+
+@media (max-width: 924px) {
+  .left-container {
+    width: 100%;
+  }
+  .right-container {
+    width: 100%;
+  }
+}
+@media (max-width: 840px) {
+  .first-container {
+    flex-direction: column-reverse;
+    height: fit-content;
+    /* gap: 2rem; */
+  }
+
+  .left-container .tops {
+    margin: 0 auto;
+  }
+  .left-container .descriptions {
+    text-align: center;
+  }
+  .left-container .descriptions p {
+    text-align: center;
+  }
+  .left-container .buttons {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .left-container .last-container {
+    justify-content: center;
+  }
+  .right-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+  .right-container img {
+    width: 60%;
+    /* position: absolute;
+    top: 3rem; */
+  }
+}
+
+@media (max-width: 450px) {
+  .first-container {
+    padding: 0 1rem 1rem;
+  }
+  .left-container {
+    padding: 0 1.7rem;
+  }
+  .left-container .tops {
+    margin: 0;
+  }
+
+  .left-container .descriptions {
+    width: 100%;
+    text-align: left;
+  }
+  .left-container .descriptions p {
+    text-align: left;
+  }
+  .left-container .buttons {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .left-container .last-container {
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .left-container {
+    padding: 0 0 0 1.1rem;
+  }
+  .left-container .tops {
+    width: 13rem;
+  }
+}

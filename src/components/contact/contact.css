@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+/* .contact {
+  height: 100vh;
+} */
+
+.top-container {
+  height: 30vh;
+  background-image: url(a.jpg!d);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: 50% 50%;
+  /* background-size: fit-content; */
+  background-attachment: fixed;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.top-container h1 {
+  font-size: 50px;
+  color: #9d8730;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 2rem auto 1rem;
+}
+.top-container p {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.book-container {
+  background-color: black;
+  /* height: 80vh; */
+}
+
+.opening {
+  margin: 0px 40%;
+  display: flex;
+  gap: 50px;
+  max-width: 500px;
+  background: none;
+}
+.opening h3 {
+  color: #9d8730;
+  font-size: 20px;
+}
+
+.opening p {
+  font-size: 16px;
+  color: white;
+}
+
+.days {
+  margin: 30px 0;
+}
+.bottom-container {
+  height: fit-content;
+  background-color: black;
+  padding: 4rem 0;
+}
+
+.bottom-container .topic h2 {
+  font-family: "Dancing Script", cursive;
+  color: #9d8730;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.bottom-container .topic p {
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.line {
+  width: 10%;
+  border: 2px solid #9d8730;
+  margin: 2rem auto;
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 4rem;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.input-section .single-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 45%;
+}
+
+.input-section .single-input p {
+  color: white;
+  margin: 0.3rem 0;
+  font-size: 18px;
+}
+
+.input-section .single-input > input {
+  width: 100%;
+  padding: 0.7rem 2rem;
+  background: transparent;
+  border: 0.5px solid white;
+  border-radius: 4px;
+}
+.input-section .single-input > input:hover {
+  border: 0.5px solid #9d8730;
+}
+
+input {
+  color: white;
+}
+
+#myInput::-webkit-inner-spin-button,
+#myInput::-webkit-outer-spin-button,
+#myInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.reservation-button {
+  background-color: #9d8730;
+  padding: 0.7rem 2rem;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 3rem;
+  color: black;
+  font-weight: 600;
+  display: flex;
+  margin: 3rem auto;
+}
+
+@media (max-width: 1200px) {
+  .bottom-container {
+    height: fit-content;
+  }
+}
+@media (max-width: 900px) {
+  .bottom-container {
+    height: fit-content;
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .top-container h1 {
+    margin: 1rem auto;
+  }
+  .top-container p {
+    font-size: 1rem;
+  }
+  .input-section .single-input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 350px) {
+  .input-section .single-input {
+    width: 100%;
+  }
+}

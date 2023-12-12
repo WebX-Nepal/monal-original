@@ -1,0 +1,288 @@
+
+.scrolll {
+ padding-left: 0.4rem;
+  /* overflow: scroll; */
+}
+.scrolll::-webkit-scrollbar {
+   width: 8px;
+}
+
+.scrolll::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.947); 
+   border-radius: 10px;
+}
+
+.scrolll::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.925); 
+}
+
+
+
+.section1 {
+  height: 30vh;
+  padding: 10px;
+  background-image: url(./menu2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: fit-content;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  position: relative;
+  z-index: 1;
+}
+
+.section1::before {
+  content: "";
+  position: absolute;
+  background: #000;
+  opacity: .5;
+
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* .section1 h1 {
+  font-size: 50px;
+  color: #9d8730;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* margin: 2rem auto 1rem; */
+ 
+
+
+.section1 p {
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.section2 {
+  /* height: 100vh; */
+  background-color: black;
+}
+
+.all {
+  max-width: 1450px;
+  margin: auto;
+  height: min(fit-content, 100vh);
+  padding: 30px 0;
+}
+
+.list-title {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+.tab {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  list-style: none;
+  color: white;
+}
+
+.tab a:hover {
+  color: #9d8730;
+}
+
+.tab.active {
+  color: #9d8730;
+}
+
+.grids {
+  padding-top: 1rem;
+}
+
+.grids > li {
+  padding-bottom: 5px;
+}
+
+/* .list-title .active p:hover {
+  color: white;
+} */
+
+/* .menu-img{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-img img{
+    height: 400px;
+    margin: 45px 0px;
+} */
+/* .food {
+  color: white;
+  font-size: 45px;
+  margin: 15px 60px;
+  background: none;
+} */
+
+.first-list {
+  display: none;
+}
+.show-content {
+  margin: 2rem min(20px, 100px);
+  background: none;
+}
+.grids {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 40px;
+  row-gap: 0px;
+  padding: 0 4rem;
+  /* margin-inline: max(60px, 10px); */
+}
+.grids li {
+  list-style: none;
+}
+
+.show-content h3 {
+  font-size: 30px;
+  color: #9d8730;
+  margin: 20px 60px;
+  background: none;
+}
+
+.show-content li {
+  margin: 1rem 0px;
+}
+.single-item {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.single-item p {
+  text-wrap: nowrap;
+}
+.dots {
+  /* max-width: 150px; */
+  margin: 0 2rem;
+  overflow: hidden;
+}
+.textss {
+  margin-top: 1rem;
+}
+.grids .textss p {
+  font-size: 16px;
+  color: white;
+  opacity: 0.6;
+  /* margin-top: 0.5rem; */
+}
+.show-content li p {
+  color: white;
+  font-size: 20px;
+  background: none;
+  text-align: left;
+}
+
+.show-content li span {
+  color: white;
+  font-family: "Times New Roman", Times, serif !important;
+  font-size: 20px;
+  background: none;
+  text-align: right;
+}
+
+h5 {
+  color: white;
+  background: none;
+}
+
+@media (max-width: 830px) {
+  .grids {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section2 {
+    height: fit-content;
+  }
+  .menu-container {
+  z-index: 1;
+
+  }
+}
+@media screen and (max-width: 800px) {
+  .list-title {   
+    gap: 1rem;
+  }
+  .grids {
+    padding: 1rem;
+  }
+  .list-title li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 675px) {
+  .grids {
+    grid-template-columns: 100%;
+  }
+  .textss {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .section1 h1 {
+    font-size: 2.5rem;
+  }
+  .section1 p {
+    font-size: 1.6rem;
+  }
+  .list-title {
+    flex-wrap: wrap;
+  }
+  .grids {
+    padding: 0 0rem;
+    margin-top: 3rem;
+    column-gap: 1rem;
+    justify-content: center;
+  }
+  .grids li {
+    padding: 0 1.2rem;
+  }
+  .single-item {
+    justify-content: space-around;
+    padding: 0;
+    gap: 0rem;
+  }
+  .show-content {
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 400px) {
+  .show-content {
+    margin: 2rem 0;
+  }
+
+  .grids li {
+    list-style: none;
+    align-items: center;
+  }
+  .single-item {
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+  .textss {
+    padding: 0.5rem 0;
+  }
+  .textss p {
+    font-size: 0.5rem;
+  }
+}

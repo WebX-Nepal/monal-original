@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  transition: scroll-behavior 1s ease-in-out;
+  font-family: Poppins, sans-serif;
+}
+
+/* font-family: Montserrat, sans-serif; */
+/* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+/* font-family: 'Great Vibes' !important; */
+/* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+a {
+  text-decoration: none;
+}
+
+* {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  transition: scroll-behavior 1s ease-in-out; /* Adjust the speed by changing the duration (0.5s in this example) and timing function */
+}

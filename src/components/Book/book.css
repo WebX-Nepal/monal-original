@@ -1,0 +1,30 @@
+.back1 {
+    height: 60vh;
+    padding: 10px;
+    background-image: url(./marble.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: fit-content;
+    background-attachment: fixed;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    position: relative;
+    z-index: 1;
+  }
+  
+  .back1::before {
+    content: "";
+    position: absolute;
+    background: #000;
+    opacity: .5;
+  
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }

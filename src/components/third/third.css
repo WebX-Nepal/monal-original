@@ -1,0 +1,148 @@
+.third-container {
+  background-color: black;
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.lefts-container {
+  height: 30vh;
+  background-image: url(family.jpg);
+  background-size: fit-content;
+  background-attachment: fixed;
+  padding: 2rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  position: relative;
+  z-index: 1;
+}
+
+.lefts-container::before {
+  content: "";
+  position: absolute;
+  background: #000;
+  opacity: .5;
+
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.lefts-container h1 {
+  font-size: 50px;
+  color: #9d8730;
+  text-align: center;
+  /* margin: 50px auto 0; */
+}
+
+.lefts-container p {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+/* .rights-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+} */
+
+/* ======================================
+Responsive Image gallery Style rules
+======================================*/
+
+.container {
+  max-width: 1550px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.heading-text {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.heading-text span {
+  font-weight: 100;
+}
+
+/* Responsive image gallery rules begin*/
+
+.image-gallery {
+  /* Mobile first */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-gallery .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-item img {
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .image-gallery {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .image-gallery .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .lefts-container p {
+    font-size: 1.6rem;
+  }
+  #first {
+    display: none;
+  }
+  #second {
+    display: none;
+  }
+}
+/* overlay styles */
+
+.image-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(57, 57, 57, 0.502);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 900;
+  /* center overlay content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover */
+.image-item:hover .overlay {
+  transform: scale(1);
+}

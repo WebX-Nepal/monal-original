@@ -1,0 +1,7 @@
+.glassBack{
+    background-image: url(./glass.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: fit-content;
+    /* background-attachment: fixed; */
+}
