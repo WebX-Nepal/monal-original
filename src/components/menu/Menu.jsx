@@ -9,9 +9,12 @@ const Menu = () => {
   const [move, setMove] = useState(0);
   return (
     <>
-    <Navbar/>
     <div>
-      <div className="h-[33vh] bg-[url('./src/components/menu/food.jpg')] object-contain bg-cover bg-fixed   ">
+      <div className="relative h-[33vh] bg-[url('./src/components/menu/food.jpg')] object-contain bg-cover bg-fixed   ">
+    <div className="sticky top-0"> 
+
+    <Navbar/>
+    </div>
         <div className="bg-black/30 w-full h-full flex items-center justify-center">
           <h3 className="text-white text-6xl font-Cormorant font-bold">
             Our Menu
