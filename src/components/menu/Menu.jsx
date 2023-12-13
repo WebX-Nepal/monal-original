@@ -20,10 +20,7 @@ const Menu = () => {
         <div className="h-[10vh] bg-yellow-100 bg-opacity-50  flex items-center justify-center">
           <div className="">
             <div className="w-[220px]">
-              <div
-             
-                className="cursor-pointer text-white  w-full h-12  border-2 border-black bg-black rounded-3xl flex items-center justify-around relative "
-              >
+              <div className="cursor-pointer text-white  w-full h-12  border-2 border-black bg-black rounded-3xl flex items-center justify-around relative ">
                 <motion.div
                   initial={{ x: 0 }}
                   animate={{ x: move }}
