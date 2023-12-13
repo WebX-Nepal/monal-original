@@ -11,7 +11,7 @@ const Menu = () => {
     <>
     <div>
       <div className="relative h-[33vh] bg-[url('./src/components/menu/food.jpg')] object-contain bg-cover bg-fixed   ">
-    <div className="sticky top-0"> 
+    <div className=""> 
 
     <Navbar/>
     </div>
