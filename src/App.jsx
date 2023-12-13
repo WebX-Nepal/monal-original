@@ -18,6 +18,7 @@ import Ambiance from "./components/Ambiance/Ambiance";
 import OurCustomers from './components/ourCustomers/OurCustomers'
 import OurGallery from "./components/ourGallery/OurGallery";
 import BigFooter from "./components/BigFooter/BigFooter";
+import ImageSlide from "./components/imageSlider/ImageSlide";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       {/* <First /> */}
       <HomeCarousel />
       <Book />
+      <ImageSlide/>
       {/* <Passion /> */}
       {/* <Ambiance /> */}
       <OurCustomers />
