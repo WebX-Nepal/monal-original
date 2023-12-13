@@ -96,7 +96,7 @@ const menulists = [
 export default function Food() {
   return (
     <>
-      <div className=" bg-[url('./src/components/menu/marble.jpg')] object-cover bg-cover  ">
+      <div className="  ">
         <div className="bg-yellow-100 bg-opacity-50 py-16 px-32  ">
           <Menulist title={titles} lists={menulists} />
           <Menulist title={"Thupa"} lists={menulists} />

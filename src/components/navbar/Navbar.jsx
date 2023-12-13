@@ -5,16 +5,16 @@ export default function Navbar() {
   const navigate = useNavigate();
   return (
     <div>
-      <div className=" absolute w-full bg-transparent text-white py-6 z-30 flex justify-between px-20">
+      <div className=" absolute w-full bg-transparent text-slate-50 py-6 z-30 flex justify-between px-20">
         <div>
           <img src={Logo} alt="Logo MONAL" width={250} />{" "}
         </div>
         <ul className=" flex gap-10 justify-center items-center text-md ">
           <div className="flex justify-between items-center gap-10">
-            <li className="hover:text-[#9D8730] cursor-pointer  "> Home</li>
+            <li className="hover:text-[#9D8730] cursor-pointer  " onClick={()=>navigate('/')}> Home</li>
             <li className="hover:text-[#9D8730] cursor-pointer  ">
               {" "}
-              <a onClick={() => navigate("menu")} className="">
+              <a onClick={() => navigate("/menu")} className="">
                 Menu
               </a>
             </li>
