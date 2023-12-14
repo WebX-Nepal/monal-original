@@ -1,6 +1,6 @@
 import book from "../Book/book.png";
 import "./book.css";
-
+import { Link } from "react-router-dom";
 export default function Book() {
   return (
     <section className=" h-[60vh]">
@@ -20,9 +20,12 @@ export default function Book() {
           </p>
         </div>
 
+        <Link  to="https://www.sevenrooms.com/reservations/monaldiningvenue" target="_black">
         <button className="border-2 border-[#9D8730] cursor-pointer px-6 py-2 rounded-3xl hover:border-2 hover:border-white hover:text-[#9D8730] ">
+        
           Reservation
         </button>
+        </Link>
       </div>
     </section>
   );

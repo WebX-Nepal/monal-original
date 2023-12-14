@@ -19,8 +19,12 @@ import OurCustomers from './components/ourCustomers/OurCustomers'
 import OurGallery from "./components/ourGallery/OurGallery";
 import BigFooter from "./components/BigFooter/BigFooter";
 import ImageSlide from "./components/imageSlider/ImageSlide";
+import { useState } from "react";
 
 function App() {
+
+  
+  console.log("from  app" )
   return (
     <div className="relative bg-black">
       {/* <Navbars /> */}

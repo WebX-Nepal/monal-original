@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
 import Menu from "./components/menu/Menu.jsx";
+import ContactUs from "./pages/ContactUs.jsx";
 // import SecondPage from "./pages/SecondPage.jsx";
 // import FifthPage from "./pages/FifthPage.jsx";
 // import SixthPage from "./pages/SixthPage.jsx";
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/contact" element={<SixthPage />} />
         <Route path="/layout" element={<Layout />} /> */}
         <Route path="menu" element={<Menu />} />
+        <Route path="contactUs" element={<ContactUs/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
