@@ -6,16 +6,21 @@ import Drinks from "./Drinks";
 import Navbar from "../navbar/Navbar";
 import BigFooter from "../BigFooter/BigFooter";
 
-import foodbg from "./food.jpg"
+import foodbg from "./food.jpg";
 const Menu = () => {
   const [food, setFood] = useState(true);
   const [move, setMove] = useState(0);
   return (
     <>
       <div>
-        <div  style={{
-          backgroundImage: `url(${foodbg})`
-        }} className={`relative h-[33vh]  object-contain bg-cover bg-fixed   `}>
+        <div
+          style={{
+            backgroundImage: `url(${foodbg})`,backgroundSize:"cover"
+          }}
+
+
+          className={`relative h-[33vh]   bg-cover bg-fixed   `}
+        >
           <div className="">
             <Navbar />
           </div>

@@ -25,21 +25,21 @@ export default function HomeCarousel() {
       <Slider {...settings}>
         <div className="object-cover max-md:h-[50vh] relative bg-gradient-to-tl from-gray-500 to-gray-500 -z-10 text-white h-[100vh] w-[100%]">
           <img
-            src={hero1}
+            src={hero2}
             alt="food2"
             className="h-full w-full object-cover  bg-left-top object-right-top absolute mix-blend-overlay"
           />
         </div>
          <div className="relative max-md:h-[50vh] bg-gradient-to-tl from-gray-600 to-gray-700 -z-10 text-white h-[100vh] w-[100%] ">
           <img
-            src={hero2}
+            src={hero3}
             alt="food1"
             className="h-full w-full bg-left-top object-cover  object-right-top absolute mix-blend-overlay"
           />
         </div>
         <div className="relative max-md:h-[50vh] bg-gradient-to-tl from-gray-600 to-gray-700 -z-10 text-white h-[100vh] w-[100%] ">
           <img
-            src={hero3}
+            src={hero1}
             alt="food1"
             className="h-full w-full bg-left-top  object-cover  object-right-top absolute mix-blend-overlay"
           />
