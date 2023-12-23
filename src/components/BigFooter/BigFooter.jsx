@@ -8,18 +8,25 @@ export default function BigFooter() {
       <div className="h-[100%] pb-20 bg-black/60">
         <div className="">.</div>
         <div className="mt-4  flex flex-col items-center justify-center gap-12  text-white text-xl">
-          <img src={logo} alt="lgog" width={400} className="max-sm:w-" />
+          <img src={logo} alt="lgog" width={400} className="max-sm:w-44" />
 
           <div className="flex flex-col items-center">
             <p>062 791 31 51</p>
             <p> info@monaldining.com.au</p>
-            <p>
+            <p className="text-center">
               <a
                 rel="noopener noreferrer"
                 href="https://www.google.com/maps/place/Monal+Dining/@-27.8501601,153.0524725,9.25z/data=!4m6!3m5!1s0x6b91592183311737:0x6782f30fea0f8ac0!8m2!3d-27.450835!4d153.0468315!16s%2Fg%2F11vhtbxxh1?hl=en-NP&entry=ttu"
                 target="_black"
               >
-                48 Skyring Terrace, Newstead QLD 4006, Australia
+               
+                48 Skyring Terrace,
+
+
+            
+
+                 Newstead QLD 4006, Australia
+              
               </a>
             </p>
           </div>

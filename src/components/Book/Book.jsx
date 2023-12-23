@@ -5,10 +5,10 @@ export default function Book() {
   return (
     <section className=" h-[60vh]">
       <div
-        className={`p-8 max-sm:p-0 flex flex-col justify-center items-center gap-8 back1 text-white `}
+        className={` max-sm:p-0 flex flex-col justify-center items-center gap-8 back1 text-white `}
       >
         <p className="text-4xl font-thin max-sm:text-2xl">Book a table</p>
-        <div className="w-[50vw]">
+        <div className=" max-md:w-[88%] md:w-[50vw]">
           {" "}
           <p className="font-semibold text-center  text-slate-200 leading-5 font-sans max-sm:text-xs max-sm:text-justify ">
             Giving a gentle nod to Sichuan flavours and authentic Cantonese

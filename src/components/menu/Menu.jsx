@@ -16,7 +16,7 @@ const Menu = () => {
             <Navbar />
           </div>
           <div className="bg-black/30 w-full h-full flex items-center justify-center">
-            <h3 className="text-white text-6xl font-Cormorant font-bold">
+            <h3 className="text-white text-6xl font-Cormorant font-bold max-sm:text-4xl">
               Our Menu
             </h3>
           </div>

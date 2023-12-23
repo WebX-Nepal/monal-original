@@ -24,7 +24,7 @@ import { useState } from "react";
 function App() {
 
   
-  console.log("from  app" )
+
   return (
     <div className="relative bg-black">
       {/* <Navbars /> */}
