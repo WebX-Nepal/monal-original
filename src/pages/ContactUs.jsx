@@ -3,6 +3,9 @@ import BigFooter from "../components/BigFooter/BigFooter";
 import { Footer } from "antd/es/layout/layout";
 import { Icon } from "@iconify/react";
 export default function ContactUs() {
+  function handleClick(e) {
+    e.preventDefault();
+  }
   return (
     <>
       <main className="bg-black text-white ">
@@ -51,7 +54,10 @@ export default function ContactUs() {
                     <label htmlFor="">Message here </label>
                     <textarea className="h-16  bg-transparent outline-none border-b" />
                   </div>
-                  <button className="px-5 py-2 whitespace-nowrap border border-[#9D8831] rounded-3xl      hover:text-[#9D8831] hover:border-white hover:scale-105 hover:transition-all duration-500 transition-all hover:duration-1000">
+                  <button
+                    onClick={handleClick}
+                    className="px-5 py-2 whitespace-nowrap border border-[#9D8831] rounded-3xl      hover:text-[#9D8831] hover:border-white hover:scale-105 hover:transition-all duration-500 transition-all hover:duration-1000"
+                  >
                     {" "}
                     Send Now
                   </button>
@@ -72,11 +78,10 @@ export default function ContactUs() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d759403.3494409767!2d153.0524724869419!3d-27.85016005539279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91592183311737%3A0x6782f30fea0f8ac0!2sMonal%20Dining!5e0!3m2!1sen!2snp!4v1703319958615!5m2!1sen!2snp"
                   // width="400"
                   // height="300"
-                  
+
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
-               
               </div>
             </div>
 
