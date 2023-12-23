@@ -22,7 +22,8 @@ const Menu = () => {
           </div>
         </div>
 
-        <div className="bg-[url('./src/components/menu/marble.jpg')]  object-cover bg-contain">
+        <div className="bg-[#F0EED3]  bg-contain">
+          {/* <div className="bg-[url('./src/components/menu/marble.jpg')]  bg-contain"> */}
           <div className="h-[10vh] bg-yellow-100 bg-opacity-50   flex items-center justify-center">
             <div className="mt-8">
               <div className="w-[210px]">
@@ -57,10 +58,10 @@ const Menu = () => {
               </div>
             </div>
           </div>
-          {food && <Food />}
+          {food && <Food food={food} />}
           {!food && <Drinks />}
         </div>
-        <BigFooter/>
+        <BigFooter />
       </div>
     </>
   );

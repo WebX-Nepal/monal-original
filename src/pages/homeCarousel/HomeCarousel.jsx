@@ -19,30 +19,30 @@ export default function HomeCarousel() {
     fade: true,
   };
   return (
-    <div className=" relative bg-black w-[100%] h-[100vh]">
+    <div className=" relative bg-black w-[100%] h-[100vh] max-md:h-[60vh]">
       <Navbar />
       <Slider {...settings}>
-        <div className="relative bg-gradient-to-tl from-gray-500 to-gray-500 -z-10 text-white h-[100vh] w-[100%]">
+        <div className="object-cover max-md:h-[50vh] relative bg-gradient-to-tl from-gray-500 to-gray-500 -z-10 text-white h-[100vh] w-[100%]">
           <img
             src="ambience.jpeg"
             alt="food2"
-            className="w-full bg-left-top object-right-top absolute mix-blend-overlay"
+            className="h-full w-full object-cover  bg-left-top object-right-top absolute mix-blend-overlay"
           />
         </div>
-        <div className="relative bg-gradient-to-tl from-gray-600 to-gray-700 -z-10 text-white h-[100vh] w-[100%] ">
+         <div className="relative max-md:h-[50vh] bg-gradient-to-tl from-gray-600 to-gray-700 -z-10 text-white h-[100vh] w-[100%] ">
           <img
             src="ambience2.jpg"
             alt="food1"
-            className="w-full bg-left-top object-right-top absolute mix-blend-overlay"
+            className="h-full w-full bg-left-top object-cover  object-right-top absolute mix-blend-overlay"
           />
         </div>
-        <div className="relative bg-gradient-to-tl from-gray-600 to-gray-700 -z-10 text-white h-[100vh] w-[100%] ">
+        <div className="relative max-md:h-[50vh] bg-gradient-to-tl from-gray-600 to-gray-700 -z-10 text-white h-[100vh] w-[100%] ">
           <img
             src="ambience3.jpg"
             alt="food1"
-            className="w-full bg-left-top object-right-top absolute mix-blend-overlay"
+            className="h-full w-full bg-left-top  object-cover  object-right-top absolute mix-blend-overlay"
           />
-        </div>
+        </div> 
       </Slider>
     </div>
   );
