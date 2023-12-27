@@ -2,8 +2,6 @@ import { Link, NavLink } from "react-router-dom";
 import Logo from "../../../public/monalLogo.png";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
-import { motion } from "framer-motion";
-
 export default function Navbar() {
   const activeLink = " text-[#9D8730] font-bold";
   const normalLink = "";
@@ -29,36 +27,24 @@ export default function Navbar() {
           />
         </div>
         {smallNav && (
-          <motion.div
-            initial={{
-              opacity:0,
-              y:-600
-              
-            }}
-            animate={{
-              opacity:1,
-              y:0
-            }}
-            exit={{opacity:0.1}}
-            transition={{duration:0.25, ease:"anticipate"}}
-            className="absolute w-full  left-0 top-0  bg-[#CA8A04] pb-8   "
-          >
-            <div className="flex justify-between pr-8 pt-8 ">
-              <div></div>
-              <div onClick={() => setSmallNav(false)}>
-                {" "}
-                <Icon width={25} color="black" icon={`akar-icons:cross`} />
-              </div>
+          <div className="fixed left-0 top-0 h-[100vh]  w-full  ">
+            <div
+              onClick={() => setSmallNav(false)}
+              className="flex h-[60%]   justify-between items-center"
+            >
+              {/* <div className="max-sm:w-32">
+                <img src={Logo} alt="Logo MONAL" width={200} className="" />
+              </div> */}
             </div>
-            <ul className="flex   px-16    bg-[#CA8A04] flex-col gap-4 justify-center items-center  ">
+            <ul className="flex   pl-16   rounded-tl-full    bg-[#CA8A04] h-[40%] flex-col gap-4 justify-center items-center  ">
               {/* <div className="flex w-full  justify-around items-center">
                 <div></div>
                 <Icon
                   icon="akar-icons:cross"
                   width={22}
                   onClick={() => setSmallNav(false)}
-                  />
-                </div> */}
+                />
+              </div> */}
               <Link to={"/"}>
                 <li
                   className="cursor-pointer"
@@ -97,7 +83,7 @@ export default function Navbar() {
                 </li>
               </Link>
             </ul>{" "}
-          </motion.div>
+          </div>
         )}
 
         <ul className=" flex gap-10 justify-center items-center text-md text-black max-lg:hidden ">

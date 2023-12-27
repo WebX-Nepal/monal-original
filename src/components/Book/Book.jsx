@@ -6,7 +6,7 @@ import maroo from "../../assets/maroo.png"
 export default function Book() {
   return (
     <section
-      className=" h-[50vh] font-semibold  bg-[#F7F4CB] bg-fixed"
+      className=" h-[50vh] max-sm:h-[33vh] font-semibold  bg-[#F7F4CB] bg-fixed"
       // style={{ backgroundImage: `url(${maroo})` }}
     >
       <div

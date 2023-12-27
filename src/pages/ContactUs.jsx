@@ -4,6 +4,7 @@ import { Footer } from "antd/es/layout/layout";
 import marble from "./marble.jpg";
 import { Icon } from "@iconify/react";
 import maroo from "../assets/maroo.png";
+import { Link } from "react-router-dom";
 export default function ContactUs() {
   const handleMailClick = () => {
     const subject = `Hello! Let's Connect.`;
@@ -110,6 +111,7 @@ export default function ContactUs() {
 
             <div className="mt-32 max-sm:mt-16 max-md:mt-32   flex flex-col gap-16">
               <div className="flex justify-around max-md:flex-col max-md:gap-4 max-md:items-center max-md:justify-center">
+                <Link target="_blank" to="https://www.google.com/maps/place/Monal+Dining/@-27.450835,153.046832,8z/data=!4m6!3m5!1s0x6b91592183311737:0x6782f30fea0f8ac0!8m2!3d-27.450835!4d153.0468315!16s%2Fg%2F11vhtbxxh1?hl=en&entry=ttu">
                 <div className="flex flex-col gap-2 items-center">
                   <div className="">
                     <Icon
@@ -122,6 +124,7 @@ export default function ContactUs() {
                   <div>48 Skyring Terrace, </div>
                   <div>Newstead QLD 4006, Australia</div>
                 </div>
+                      </Link>
                 <div className="flex flex-col gap-2 items-center">
                   <div>
                     <Icon

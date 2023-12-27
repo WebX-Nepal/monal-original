@@ -29,7 +29,7 @@ export default function BigFooter() {
     >
       <div className="h-[100%] pb-20 ">
         <div className="">.</div>
-        <div className="mt-28  flex flex-col items-center justify-center gap-12   text-xl">
+        <div className="mt-28 max-sm:mt-4 flex flex-col items-center justify-center gap-12 max-sm:gap-10   text-xl">
           {/* <img src={logo} alt="lgog" width={380} className="max-sm:w-44" /> */}
 
           <p className="  font-poppins text-3xl font-light ">OPENING HOURS</p>
@@ -56,24 +56,24 @@ export default function BigFooter() {
                 </a>
               </p>
             </div> */}
-          <div className=" max-sm:mt-16 max-md:mt-32  font-poppins font-normal  flex flex-col w-full  px-52 max-sm:px-0">
-            <div className="flex  justify-around max-md:flex-col max-md:gap-4 max-md:items-center max-md:justify-center">
+          <div className=" max-sm:mt-0 max-md:mt-32  font-poppins font-normal  flex flex-col w-full  px-52 max-sm:px-0">
+            <div className="flex  justify-around max-md:flex-col max-sm:gap-2 max-md:gap-4 max-md:items-center max-md:justify-center">
+                  <Link target="_blank" to="https://www.google.com/maps/place/Monal+Dining/@-27.450835,153.046832,8z/data=!4m6!3m5!1s0x6b91592183311737:0x6782f30fea0f8ac0!8m2!3d-27.450835!4d153.0468315!16s%2Fg%2F11vhtbxxh1?hl=en&entry=ttu">
               <div className="flex flex-col gap-2 items-center">
                 <div className="">
-                  <Link to="/contactUs">
                     <Icon
                       icon="carbon:map"
                       color="white"
                       width={45}
                       className="p-2  rounded-full bg-[#cdae32]"
                     />
-                  </Link>
                 </div>
                 <div className="whitespace-nowrap">48 Skyring Terrace, </div>
                 <div className="whitespace-nowrap">
                   Newstead QLD 4006, Australia
                 </div>
               </div>
+                  </Link>
               <div className="flex flex-col  gap-2 items-center">
                 <div>
                   <Icon

@@ -58,7 +58,7 @@ export default function Slideme() {
     <Slider {...settings} className="">
       {gallaryImage.map((img) => {
         return (
-          <div key={img} className={`h-[50vh]`}>
+          <div key={img} className={`h-[50vh] max-sm:h-[20vh]`}>
             <img src={`${img}`} className="h-full   object-center  object-cover    w-full" alt="" />
           </div>
         );
