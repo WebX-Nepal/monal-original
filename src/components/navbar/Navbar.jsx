@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../../public/monalLogo.png";
+import Logo2 from "../../../public/white-logo.png";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
@@ -31,20 +32,22 @@ export default function Navbar() {
         {smallNav && (
           <motion.div
             initial={{
-              opacity:0,
-              y:-600
-              
+              opacity: 0,
+              y: -600,
             }}
             animate={{
-              opacity:1,
-              y:0
+              opacity: 1,
+              y: 0,
             }}
-            exit={{opacity:0.1}}
-            transition={{duration:0.25, ease:"anticipate"}}
+            exit={{ opacity: 0.1 }}
+            transition={{ duration: 0.25, ease: "anticipate" }}
             className="absolute w-full  left-0 top-0  bg-[#CA8A04] pb-8   "
           >
-            <div className="flex justify-between pr-8 pt-8 ">
-              <div></div>
+            <div className="flex justify-between px-8 mb-4 pt-8 ">
+              <div className="w-32">
+                {" "}
+                <img src={Logo2} alt="" />
+              </div>
               <div onClick={() => setSmallNav(false)}>
                 {" "}
                 <Icon width={25} color="black" icon={`akar-icons:cross`} />
