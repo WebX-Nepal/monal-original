@@ -20,7 +20,11 @@ export default function Navbar() {
             setSmallNav(true);
           }}
         >
-          <Icon width={30} color="black" icon={`${!smallNav?"ci:hamburger-lg":"akar-icons:cross"}`} />
+          <Icon
+            width={30}
+            color="black"
+            icon={`${!smallNav ? "ci:hamburger-lg" : "akar-icons:cross"}`}
+          />
         </div>
         {smallNav && (
           <div className="fixed left-0 top-0 h-[100vh]  w-full  ">
@@ -31,7 +35,6 @@ export default function Navbar() {
               {/* <div className="max-sm:w-32">
                 <img src={Logo} alt="Logo MONAL" width={200} className="" />
               </div> */}
-              
             </div>
             <ul className="flex   pl-16   rounded-tl-full    bg-[#CA8A04] h-[40%] flex-col gap-4 justify-center items-center  ">
               {/* <div className="flex w-full  justify-around items-center">
@@ -120,7 +123,7 @@ export default function Navbar() {
                 to="https://www.sevenrooms.com/reservations/monaldiningvenue"
                 target="_black"
               >
-                <button className="border-2 border-[#9D8730] cursor-pointer px-5 py-2 rounded-3xl hover:border-2 hover:border-white hover:text-[#9D8730] ">
+                <button className="border-2 border-[#9D8730] cursor-pointer px-5 py-2 rounded-3xl hover:border-2 hover:border-black hover:text-[#9D8730] ">
                   {" "}
                   Book Now
                 </button>{" "}

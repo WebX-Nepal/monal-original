@@ -9,6 +9,19 @@ import maro from "../../assets/maro.png";
 import maroo from "../../assets/maroo.png";
 import maroon from "../../assets/maroon.png";
 export default function BigFooter() {
+  const handleMailClick = () => {
+    const subject = `Hello! Let's Connect.`;
+    // Use window.location.href with the 'mailto' URI scheme to initiate an email
+    window.location.href = `mailto:info@monaldining.com.au?subject=${encodeURIComponent(
+      subject
+    )}&body=I%20would%20like%20to%20get%20in%20touch.`;
+  };
+
+  const handleContactClick = () => {
+    // Use window.location.href with the 'tel' URI scheme to initiate a phone call
+    window.location.href = "tel:+61435882342";
+  };
+
   return (
     <section
       className="  bg-center  bg-cover font-poppins bg-[#F7F4CB]  "
@@ -28,7 +41,7 @@ export default function BigFooter() {
               <br /> Friday - Saturday <span> (Lunch & Dinner) </span>
             </div>
           </div>
-            {/* <div className="flex text-sm max-md:flex-col gap-4 uppercase font-poppins  w-full justify-center items-center">
+          {/* <div className="flex text-sm max-md:flex-col gap-4 uppercase font-poppins  w-full justify-center items-center">
               <p className="font-poppins font-light ">+61435882342</p>
               <p className="max-md:hidden">|</p>
               <p className="lowercase"> info@monaldining.com.au</p>
@@ -44,43 +57,49 @@ export default function BigFooter() {
               </p>
             </div> */}
           <div className=" max-sm:mt-16 max-md:mt-32  font-poppins font-normal  flex flex-col w-full  px-52 max-sm:px-0">
-              <div className="flex  justify-around max-md:flex-col max-md:gap-4 max-md:items-center max-md:justify-center">
-                <div className="flex flex-col gap-2 items-center">
-                  <div className="">
+            <div className="flex  justify-around max-md:flex-col max-md:gap-4 max-md:items-center max-md:justify-center">
+              <div className="flex flex-col gap-2 items-center">
+                <div className="">
+                  <Link to="/contactUs">
                     <Icon
                       icon="carbon:map"
                       color="white"
                       width={45}
                       className="p-2  rounded-full bg-[#cdae32]"
                     />
-                  </div>
-                  <div className="whitespace-nowrap">48 Skyring Terrace, </div>
-                  <div className="whitespace-nowrap">Newstead QLD 4006, Australia</div>
+                  </Link>
                 </div>
-                <div className="flex flex-col  gap-2 items-center">
-                  <div>
-                    <Icon
-                      icon="solar:phone-linear"
-                      color="white"
-                      width={45}
-                      className="p-2  rounded-full bg-[#cdae32]"
-                    />
-                  </div>
-                  <div className="font-poppins ">+61435882342</div>
-                </div>
-                <div className="flex flex-col gap-2 items-center">
-                  <div>
-                    <Icon
-                      icon="fe:mail"
-                      color="white"
-                      width={45}
-                      className="p-2  rounded-full bg-[#cdae32]"
-                    />
-                  </div>
-                  <div>info@monaldining.com.au</div>
+                <div className="whitespace-nowrap">48 Skyring Terrace, </div>
+                <div className="whitespace-nowrap">
+                  Newstead QLD 4006, Australia
                 </div>
               </div>
+              <div className="flex flex-col  gap-2 items-center">
+                <div>
+                  <Icon
+                    icon="solar:phone-linear"
+                    color="white"
+                    width={45}
+                    className="p-2  rounded-full bg-[#cdae32] cursor-pointer"
+                    onClick={handleContactClick}
+                  />
+                </div>
+                <div className="font-poppins ">+61435882342</div>
+              </div>
+              <div className="flex flex-col gap-2 items-center">
+                <div>
+                  <Icon
+                    icon="fe:mail"
+                    color="white"
+                    width={45}
+                    className="p-2  rounded-full bg-[#cdae32] cursor-pointer"
+                    onClick={handleMailClick}
+                  />
+                </div>
+                <div>info@monaldining.com.au</div>
+              </div>
             </div>
+          </div>
 
           <hr className="w-[75%] border-[#9D8730] border-[px] rounded-md" />
 
@@ -135,8 +154,11 @@ export default function BigFooter() {
           <div className="social_icons flex gap-4 ">
             {/* <Icon icon="ri:facebook-fill" className="hover:text-[#9D8730]" /> */}
 
-            <Link target="_blank" to="https://www.instagram.com/monaldining?igshid=MTNiYzNiMzkwZA==">
-            <Icon icon="ri:instagram-fill" className="hover:text-[#9D8730]" />
+            <Link
+              target="_blank"
+              to="https://www.instagram.com/monaldining?igshid=MTNiYzNiMzkwZA=="
+            >
+              <Icon icon="ri:instagram-fill" className="hover:text-[#9D8730]" />
             </Link>
           </div>
         </div>

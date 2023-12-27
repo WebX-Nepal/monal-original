@@ -5,6 +5,18 @@ import marble from "./marble.jpg";
 import { Icon } from "@iconify/react";
 import maroo from "../assets/maroo.png";
 export default function ContactUs() {
+  const handleMailClick = () => {
+    const subject = `Hello! Let's Connect.`;
+    // Use window.location.href with the 'mailto' URI scheme to initiate an email
+    window.location.href = `mailto:info@monaldining.com.au?subject=${encodeURIComponent(
+      subject
+    )}&body=I%20would%20like%20to%20get%20in%20touch.`;
+  };
+
+  const handleContactClick = () => {
+    // Use window.location.href with the 'tel' URI scheme to initiate a phone call
+    window.location.href = "tel:+61435882342";
+  };
   function handleClick(e) {
     e.preventDefault();
   }
@@ -35,17 +47,16 @@ export default function ContactUs() {
                   <div className="flex flex-col">
                     {/* <label htmlFor="">Your full name</label> */}
                     <input
-                    placeholder="Your full name"
+                      placeholder="Your full name"
                       type="text"
                       className="bg-transparent outline-none border-b  border-black"
                     />
                   </div>
 
                   <div className="flex flex-col">
-
                     {/* <label htmlFor="">Your email address</label> */}
                     <input
-                    placeholder="Your email address"
+                      placeholder="Your email address"
                       type="text"
                       className="bg-transparent outline-none border-b border-black "
                     />
@@ -54,14 +65,17 @@ export default function ContactUs() {
                   <div className="flex flex-col">
                     {/* <label htmlFor="">Your phone number </label> */}
                     <input
-                    placeholder="Your phone number "
+                      placeholder="Your phone number "
                       type="text"
                       className="bg-transparent outline-none border-b  border-black"
                     />
                   </div>
                   <div className="flex flex-col">
                     {/* <label htmlFor="">Message here </label> */}
-                    <textarea placeholder="Message here" className="h-16  bg-transparent outline-none border-b border-black" />
+                    <textarea
+                      placeholder="Message here"
+                      className="h-16  bg-transparent outline-none border-b border-black"
+                    />
                   </div>
                   <button
                     onClick={handleClick}
@@ -115,6 +129,7 @@ export default function ContactUs() {
                       color="white"
                       width={45}
                       className="p-2  rounded-full bg-[#cdae32]"
+                      onClick={handleContactClick}
                     />
                   </div>
                   <div className="font-poppins font-light">+61435882342</div>
@@ -126,6 +141,7 @@ export default function ContactUs() {
                       color="white"
                       width={45}
                       className="p-2  rounded-full bg-[#cdae32]"
+                      onClick={handleMailClick}
                     />
                   </div>
                   <div>info@monaldining.com.au</div>
