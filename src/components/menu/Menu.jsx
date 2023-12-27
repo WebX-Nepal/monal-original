@@ -13,22 +13,15 @@ const Menu = () => {
   return (
     <>
       <div>
-        <div
-          style={{
-            backgroundImage: `url(${foodbg})`,backgroundSize:"cover"
-          }}
-
-
-          className={`relative h-[33vh]   bg-cover bg-fixed   `}
-        >
-          <div className="">
+        <div style={{}} className={`relative h-[15vh] bg-[#F7F4CB]   bg-cover bg-fixed   `}>
+          <div className="bg-black">
             <Navbar />
           </div>
-          <div className="bg-black/30 w-full h-full flex items-center justify-center">
+          {/* <div className="bg-black/30 w-full h-full flex items-center justify-center">
             <h3 className="text-white text-6xl font-Cormorant font-bold max-sm:text-4xl">
               Our Menu
             </h3>
-          </div>
+          </div> */}
         </div>
 
         <div className="bg-[#F0EED3]  bg-contain">
@@ -70,7 +63,7 @@ const Menu = () => {
           {food && <Food food={food} />}
           {!food && <Drinks />}
         </div>
-        <BigFooter />
+        {/* <BigFooter /> */}
       </div>
     </>
   );

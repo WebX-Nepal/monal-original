@@ -1,30 +1,26 @@
 import book from "../Book/book.png";
+import marble from "./marble.jpg";
 import "./book.css";
 import { Link } from "react-router-dom";
+import maroo from "../../assets/maroo.png"
 export default function Book() {
   return (
-    <section className=" h-[60vh]">
+    <section
+      className=" h-[50vh] font-semibold  bg-[#F7F4CB] bg-fixed"
+      // style={{ backgroundImage: `url(${maroo})` }}
+    >
       <div
-        className={` max-sm:p-0 flex flex-col justify-center items-center gap-8 back1 text-white `}
+        className={` max-sm:p-0 flex text-black h-full flex-col justify-center items-center gap-8   `}
       >
-        <p className="text-4xl font-thin max-sm:text-2xl">Book a table</p>
-        <div className=" max-md:w-[88%] md:w-[50vw]">
-          {" "}
-          <p className="font-semibold text-center  text-slate-200 leading-5 font-sans max-sm:text-xs max-sm:text-justify ">
-            Giving a gentle nod to Sichuan flavours and authentic Cantonese
-            cuisine,Monal Dining unites a respected team of industry leaders
-            from both international and interstate origins. Modern Chinese is
-            the goal here, having sourced the very best local ingredients to
-            create inspired dishes that educate & excite, with a wine & cocktail
-            list that follows suit. Dining that ignites all the senses.
-          </p>
-        </div>
+        <p className="text-4xl font-light max-sm:text-2xl ">Book a table</p>
 
-        <Link  to="https://www.sevenrooms.com/reservations/monaldiningvenue" target="_black">
-        <button className="border-2 border-[#9D8730] cursor-pointer px-6 py-2 rounded-3xl hover:border-2 hover:border-white hover:text-[#9D8730] ">
-        
-          Reservation
-        </button>
+        <Link
+          to="https://www.sevenrooms.com/reservations/monaldiningvenue"
+          target="_black"
+        >
+          <button className="border-2 border-[#9D8730] cursor-pointer px-6 py-2 rounded-3xl hover:border-2 hover:border-black duration-500 transition-all hover:scale-110  ">
+            Reservation
+          </button>
         </Link>
       </div>
     </section>

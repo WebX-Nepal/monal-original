@@ -20,6 +20,7 @@ import OurGallery from "./components/ourGallery/OurGallery";
 import BigFooter from "./components/BigFooter/BigFooter";
 import ImageSlide from "./components/imageSlider/ImageSlide";
 import { useState } from "react";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
 
@@ -27,35 +28,17 @@ function App() {
 
   return (
     <div className="relative bg-black">
-      {/* <Navbars /> */}
-      {/* <Navbar /> */}
-      {/* <First /> */}
-      <HomeCarousel />
+      
+      {/* <HomeCarousel /> */}
+      <Navbar/>
       <Book />
       <ImageSlide/>
-      {/* <Passion /> */}
-      {/* <Ambiance /> */}
-      <OurCustomers />
-      {/* <OurGallery /> */}
+      
+      {/* <OurCustomers /> */}
+
       <BigFooter />
 
-      {/* <Second /> 
-      <Carousels />  events
-      <Third /> 
-      <Contact /> 
-      <Dining/> 
-      <About /> 
-      <Forms /> 
-      <Footer /> 
-      <First />
-      <Second />
-      <Carousels />  
-      <Third />
-      <Contact />
-      <About />
-      <Forms />
-      <Footer />
-      */}
+    
     </div>
   );
 }
