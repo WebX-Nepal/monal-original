@@ -120,7 +120,7 @@ export default function BigFooter() {
           </Link>
 
           <div>
-            <ul className="flex gap-4 text-sm uppercase">
+            <ul className="flex gap-4 max-sm:gap-2 text-sm uppercase">
               <Link to="/" onClick={() => screenTop(0, 0)}>
                 <li>HOME </li>
               </Link>
@@ -145,7 +145,7 @@ export default function BigFooter() {
               </Link>
             </ul>
           </div>
-          <div className="copyright_details flex gap-8">
+          <div className="copyright_details flex gap-8 max-sm:gap-4">
             <h1 className="text-xs font-semibold uppercase tracking-wider">
               &copy;Copyright Monal Dining
             </h1>
