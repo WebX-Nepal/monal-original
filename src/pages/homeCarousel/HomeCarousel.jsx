@@ -44,7 +44,7 @@ export default function HomeCarousel() {
       {/* <div className="h-[18vh]"> </div> */}
       <div className="   w-[100%] lg:h-[100vh]  ">
         <Slider {...settings}>
-          {images.map((image) =>  <div key={image} className="  max-md:h-[50vh] relative bg-gradient-to-tl from-gray-500 to-gray-500 -z-10 text-white h-[100vh] w-[100%]">
+          {images.map((image) =>  <div key={image}  className="  max-md:h-[50vh] relative bg-gradient-to-tl from-gray-500 to-gray-500 -z-10 text-white h-[100vh] w-[100%]">
               <img
                 src={image}
                 alt="food2"
