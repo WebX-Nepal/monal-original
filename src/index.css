@@ -5,6 +5,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+::-webkit-scrollbar{
+  width:8px;
+}
+::-webkit-scrollbar-track{
+  background-color: #000;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #ded250;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-hover{
+  background: blue;
+}
+
 * {
   margin: 0;
   padding: 0;
