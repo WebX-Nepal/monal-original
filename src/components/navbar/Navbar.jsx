@@ -45,7 +45,7 @@ export default function Navbar() {
             transition={{ duration: 0.25, ease: "anticipate" }}
             className="absolute w-full  left-0 top-0  bg-[#CA8A04] pb-8   "
           >
-            <div className="flex justify-between px-8 mb-4 pt-4 ">
+            <div className="flex justify-between px-8 mb-4 pt-4  ">
               <div className="w-32">
                 {" "}
                 <img src={Logo2} alt="" />
@@ -55,7 +55,7 @@ export default function Navbar() {
                 <Icon width={25} color="black" icon={`akar-icons:cross`} />
               </div>
             </div>
-            <ul className="flex  mt-8 px-16    bg-[#CA8A04] flex-col gap-4 justify-center items-center  ">
+            <ul className="flex mt-8   px-16    bg-[#CA8A04] flex-col gap-4 justify-center items-center  ">
               {/* <div className="flex w-full  justify-around items-center">
                 <div></div>
                 <Icon
