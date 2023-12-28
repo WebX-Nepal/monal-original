@@ -149,12 +149,14 @@ export default function BigFooter() {
             <h1 className="text-xs font-semibold uppercase tracking-wider">
               &copy;Copyright Monal Dining
             </h1>
-            <a
-              href="https://webxnep.com"
+            <Link
+              to="https://webxnep.com"
+              target="_black"
+
               className="  hover:text-[#9D8730] text-xs font-semibold uppercase tracking-wider"
             >
               Designed by webx
-            </a>
+            </Link>
           </div>
           <div className="social_icons flex gap-4 ">
             {/* <Icon icon="ri:facebook-fill" className="hover:text-[#9D8730]" /> */}

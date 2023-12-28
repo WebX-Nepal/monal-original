@@ -10,14 +10,14 @@ export default function Navbar() {
   const normalLink = "";
   const [smallNav, setSmallNav] = useState(false);
 
-  
-
   return (
     <div className="" style={{}}>
-    <div className=" absolute w-full bg-[#F7F4CB] max-md:py-4  text-slate-50 py-2 z-30 flex   items-center justify-between px-20 max-sm:px-8">
-        <div className="max-sm:w-32">
-          <img src={Logo} alt="Logo MONAL" width={220} className="" />
-        </div>
+      <div className=" absolute w-full bg-[#F7F4CB] max-md:py-4  text-slate-50 py-2 z-30 flex   items-center justify-between px-20 max-sm:px-8">
+        <Link to="/">
+          <div className="max-sm:w-32">
+            <img src={Logo} alt="Logo MONAL" width={220} className="" />
+          </div>
+        </Link>
 
         <div
           className="lg:hidden cursor-pointer"
@@ -105,7 +105,9 @@ export default function Navbar() {
           </motion.div>
         )}
 
-        <ul className={` flex gap-10 justify-center items-center text-md text-black max-lg:hidden `}>
+        <ul
+          className={` flex gap-10 justify-center items-center text-md text-black max-lg:hidden `}
+        >
           <div className="flex justify-between items-center gap-10">
             <NavLink
               to={"/"}
