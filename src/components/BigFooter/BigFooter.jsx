@@ -58,22 +58,25 @@ export default function BigFooter() {
             </div> */}
           <div className=" max-sm:mt-0 max-md:mt-32  font-poppins font-normal  flex flex-col w-full  px-52 max-sm:px-0">
             <div className="flex  justify-around max-md:flex-col max-sm:gap-2 max-md:gap-4 max-md:items-center max-md:justify-center">
-                  <Link target="_blank" to="https://www.google.com/maps/place/Monal+Dining/@-27.450835,153.046832,8z/data=!4m6!3m5!1s0x6b91592183311737:0x6782f30fea0f8ac0!8m2!3d-27.450835!4d153.0468315!16s%2Fg%2F11vhtbxxh1?hl=en&entry=ttu">
-              <div className="flex flex-col gap-2 items-center">
-                <div className="">
+              <Link
+                target="_blank"
+                to="https://www.google.com/maps/place/Monal+Dining/@-27.450835,153.046832,8z/data=!4m6!3m5!1s0x6b91592183311737:0x6782f30fea0f8ac0!8m2!3d-27.450835!4d153.0468315!16s%2Fg%2F11vhtbxxh1?hl=en&entry=ttu"
+              >
+                <div className="flex flex-col gap-2 items-center">
+                  <div className="">
                     <Icon
                       icon="carbon:map"
                       color="white"
                       width={45}
                       className="p-2  rounded-full bg-[#cdae32]"
                     />
+                  </div>
+                  <div className="whitespace-nowrap">48 Skyring Terrace, </div>
+                  <div className="whitespace-nowrap">
+                    Newstead QLD 4006, Australia
+                  </div>
                 </div>
-                <div className="whitespace-nowrap">48 Skyring Terrace, </div>
-                <div className="whitespace-nowrap">
-                  Newstead QLD 4006, Australia
-                </div>
-              </div>
-                  </Link>
+              </Link>
               <div className="flex flex-col  gap-2 items-center">
                 <div>
                   <Icon
@@ -103,7 +106,7 @@ export default function BigFooter() {
 
           <hr className="w-[75%] border-[#9D8730] border-[px] rounded-md" />
 
-          <Link to={"/contactus"} onClick={() => window.scrollTo(0, 0)}>
+          <Link to="/contactus" onClick={() => window.scrollTo(0, 0)}>
             <div>
               <div className="flex  gap-4 items-center relative    ">
                 <div className="border-[1px] rounded-full p-4 border-[#9D8730] hover:bg-[#9D8730] ">
@@ -118,16 +121,18 @@ export default function BigFooter() {
 
           <div>
             <ul className="flex gap-4 text-sm uppercase">
-              <Link to={"/"} onClick={() => screenTop(0, 0)}>
+              <Link to="/" onClick={() => screenTop(0, 0)}>
                 <li>HOME </li>
               </Link>
               <li>|</li>
-              <Link to={"/menu"} onClick={() => screenTop(0, 0)}>
-                <li>Menu </li>
-              </Link>
+              <li>
+                <Link to="/menu" onClick={() => screenTop(0, 0)}>
+                  Menu
+                </Link>
+              </li>
 
               <li>|</li>
-              <Link to={"/contactus"} onClick={() => screenTop(0, 0)}>
+              <Link to="/contactus" onClick={() => screenTop(0, 0)}>
                 <li>Contact Us </li>
               </Link>
               <li>|</li>

@@ -10,9 +10,11 @@ export default function Navbar() {
   const normalLink = "";
   const [smallNav, setSmallNav] = useState(false);
 
+  
+
   return (
     <div className="" style={{}}>
-      <div className=" absolute w-full  text-slate-50 py-6 z-30 flex  bg-[#ewd] items-center justify-between px-20 max-sm:px-8">
+    <div className=" absolute w-full bg-[#F7F4CB]  text-slate-50 py-6 z-30 flex   items-center justify-between px-20 max-sm:px-8">
         <div className="max-sm:w-32">
           <img src={Logo} alt="Logo MONAL" width={250} className="" />
         </div>
@@ -103,7 +105,7 @@ export default function Navbar() {
           </motion.div>
         )}
 
-        <ul className=" flex gap-10 justify-center items-center text-md text-black max-lg:hidden ">
+        <ul className={` flex gap-10 justify-center items-center text-md text-black max-lg:hidden `}>
           <div className="flex justify-between items-center gap-10">
             <NavLink
               to={"/"}

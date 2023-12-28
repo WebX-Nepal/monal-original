@@ -7,8 +7,27 @@ import food2 from "./food2.jpg"
 import food3 from "./food3.jpg"
 import food4 from "./food4.jpg"
 import food5 from "./food5.jpg"
+
+import f10 from "./assets/10.jpg"
+import f15 from "./assets/15.jpg"
+import f19 from "./assets/19.jpg"
+import f20 from "./assets/20.jpg"
+import f25 from "./assets/25.jpg"
+import f28 from "./assets/28.jpg"
+import f34 from "./assets/34.jpg"
+import f41 from "./assets/41.jpg"
+import f45 from "./assets/45.jpg"
+import f48 from "./assets/48.jpg"
+import f50 from "./assets/50.jpg"
+import f51 from "./assets/51.jpg"
+import f56 from "./assets/56.jpg"
+import f61 from "./assets/61.jpg"
+import f71 from "./assets/71.jpg"
+import f72 from "./assets/72.jpg"
+import f87 from "./assets/87.jpg"
+import f94 from "./assets/94.jpg"
 const gallaryImage = [
-  food1,food2,food3,food4,food5
+  f15,f20,f28,f34,f41,f45,f48,f50,f51,f25,f56,f19,f61,f10,f71,f72,f87,f94
     
 ];
 export default function Slideme() {

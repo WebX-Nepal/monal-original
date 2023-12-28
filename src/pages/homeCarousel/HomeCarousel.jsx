@@ -2,18 +2,31 @@ import Navbar from "../../components/navbar/Navbar";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import hero1 from "./hero1.jpg"
-import hero2 from "./hero2.jpg"
-import hero3 from "./hero3.jpg"
 
-import food1 from "../../components/imageSlider/food1.jpg"
-import food2 from "../../components/imageSlider/food2.jpg"
-import food3 from "../../components/imageSlider/food3.jpg"
-import food4 from "../../components/imageSlider/food4.jpg"
-import food5 from "../../components/imageSlider/food5.jpg"
+import monaldining1 from "./assets/monaldining-internal-1.jpg";
+import monaldining2 from "./assets/monaldining-internal-2.jpg";
+import monaldining4 from "./assets/monaldining-internal-4.jpg";
+import monaldining5 from "./assets/monaldining-internal-5.jpg";
+import monaldining6 from "./assets/monaldining-internal-6.jpg";
+import monaldining9 from "./assets/monaldining-internal-9.jpg";
+import monaldining11 from "./assets/monaldining-internal-11.jpg";
+import monaldining12 from "./assets/monaldining-internal-12.jpg";
+import monaldining13 from "./assets/monaldining-internal-13.jpg";
+import monaldining14 from "./assets/monaldining-landscape-2.jpg";
+
+const images = [
+  monaldining1,
+  monaldining2,
+  monaldining4,
+  monaldining5,
+  monaldining6,
+  monaldining9,
+  monaldining11,
+  monaldining12,
+  monaldining13,
+  monaldining14,
+];
 export default function HomeCarousel() {
-
-
   const settings = {
     dots: false,
     infinite: true,
@@ -25,49 +38,22 @@ export default function HomeCarousel() {
     arrows: false,
     fade: true,
   };
-  return ( 
+  return (
     <>
-      <Navbar />
-    <div className="h-[18vh"> </div>
-    <div className=" relative bg-black w-[100%] h-[100vh] max-md:h-[60vh]">
-      <Slider {...settings}>
-        <div className="object-cover max-md:h-[50vh] relative bg-gradient-to-tl from-gray-500 to-gray-500 -z-10 text-white h-[100vh] w-[100%]">
-          <img
-            src={food1}
-            alt="food2"
-            className="h-full w-full object-center  bg-left-top object-cover absolute "
-          />
-        </div>
-         <div className="relative max-md:h-[50vh] bg-gradient-to-tl from-gray-600 to-gray-700 -z-10 text-white h-[100vh] w-[100%] ">
-          <img
-            src={food2}
-            alt="food1"
-            className="h-full w-full bg-left-top object-cover object-center   absolute mix-blend-overlay"
-            />
-        </div>
-        <div className="relative max-md:h-[50vh] bg-gradient-to-tl from-gray-600 to-gray-700 -z-10 text-white h-[100vh] w-[100%] ">
-          <img
-            src={food3}
-            alt="food1"
-            className="h-full w-full bg-left-top  object-cover object-center  absolute mix-blend-overlay"
-            />
-        </div> 
-        <div className="relative max-md:h-[50vh] bg-gradient-to-tl from-gray-600 to-gray-700 -z-10 text-white h-[100vh] w-[100%] ">
-          <img
-            src={food4}
-            alt="food1"
-            className="h-full w-full bg-left-top  object-cover object-center  absolute mix-blend-overlay"
-            />
-        </div> 
-        <div className="relative max-md:h-[50vh] bg-gradient-to-tl from-gray-600 to-gray-700 -z-10 text-white h-[100vh] w-[100%] ">
-          <img
-            src={food5}
-            alt="food1"
-            className="h-full w-full bg-left-top  object-cover object-center  absolute mix-blend-overlay"
-            />
-        </div> 
-      </Slider>
-    </div>
-            </>
+      {/* <Navbar /> */}
+      {/* <div className="h-[18vh]"> </div> */}
+      <div className="   w-[100%] lg:h-[100vh]  ">
+        <Slider {...settings}>
+          {images.map((image) =>  <div key={image} className="  max-md:h-[50vh] relative bg-gradient-to-tl from-gray-500 to-gray-500 -z-10 text-white h-[100vh] w-[100%]">
+              <img
+                src={image}
+                alt="food2"
+                className="h-full w-full  object-cover  object-center  absolute "
+              />
+            </div>
+          )}
+        </Slider>
+      </div>
+    </>
   );
 }
