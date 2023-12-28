@@ -14,9 +14,9 @@ export default function Navbar() {
 
   return (
     <div className="" style={{}}>
-    <div className=" absolute w-full bg-[#F7F4CB]  text-slate-50 py-6 z-30 flex   items-center justify-between px-20 max-sm:px-8">
+    <div className=" absolute w-full bg-[#F7F4CB]   text-slate-50 py-2 z-30 flex   items-center justify-between px-20 max-sm:px-8">
         <div className="max-sm:w-32">
-          <img src={Logo} alt="Logo MONAL" width={250} className="" />
+          <img src={Logo} alt="Logo MONAL" width={220} className="" />
         </div>
 
         <div
