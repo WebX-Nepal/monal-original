@@ -1,13 +1,8 @@
 // import "./bigfooter.css";
-import logo from "../../../public/monalWhite.png";
+
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
-import paper2 from "./paper2.jpg";
-import red from "./red.png";
-import marble from "./marble.jpg";
-import maro from "../../assets/maro.png";
-import maroo from "../../assets/maroo.png";
-import maroon from "../../assets/maroon.png";
+
 export default function BigFooter() {
   const handleMailClick = () => {
     const subject = `Hello! Let's Connect.`;
@@ -41,21 +36,8 @@ export default function BigFooter() {
               <br /> Friday - Saturday <span> (Lunch & Dinner) </span>
             </div>
           </div>
-          {/* <div className="flex text-sm max-md:flex-col gap-4 uppercase font-poppins  w-full justify-center items-center">
-              <p className="font-poppins font-light ">+61435882342</p>
-              <p className="max-md:hidden">|</p>
-              <p className="lowercase"> info@monaldining.com.au</p>
-              <p className="max-md:hidden">|</p>
-              <p className="text-center ">
-                <a
-                  rel="noopener noreferrer"
-                  href="https://www.google.com/maps/place/Monal+Dining/@-27.8501601,153.0524725,9.25z/data=!4m6!3m5!1s0x6b91592183311737:0x6782f30fea0f8ac0!8m2!3d-27.450835!4d153.0468315!16s%2Fg%2F11vhtbxxh1?hl=en-NP&entry=ttu"
-                  target="_black"
-                >
-                  48 Skyring Terrace, Newstead QLD 4006, Australia
-                </a>
-              </p>
-            </div> */}
+        
+           
           <div className=" max-sm:mt-0 max-md:mt-32  font-poppins font-normal  flex flex-col w-full  px-52 max-sm:px-0">
             <div className="flex  justify-around max-md:flex-col max-sm:gap-2 max-md:gap-4 max-md:items-center max-md:justify-center">
               <Link
